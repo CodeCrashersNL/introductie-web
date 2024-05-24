@@ -13,12 +13,12 @@ body.aaaaah {
 }
 
 @keyframes nic {
-  from {
-    background-position-x: 0px;
-  }
-  to {
-    background-position-x: -5120px;
-  }
+    from {
+        background-position-x: 0px;
+    }
+    to {
+        background-position-x: -5120px;
+    }
 }
 
 #container {
@@ -38,34 +38,34 @@ body.aaaaah {
 }
 
 body.aaaaah #container {
-  background: linear-gradient(
-    to bottom,
-    rgba(205, 133, 63, 0),
-    rgba(205, 133, 63, 0.7) 10%,
-    rgba(205, 133, 63, 0.9)
-  );
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
+    background: linear-gradient(
+        to bottom,
+        rgba(205, 133, 63, 0),
+        rgba(205, 133, 63, 0.7) 10%,
+        rgba(205, 133, 63, 0.9)
+    );
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 @media (max-width: 800px) {
-  #container {
-    grid-template-areas:
-      "header header"
-      "content content"
-      "image image"
-      "footer footer";
-  }
+    #container {
+        grid-template-areas:
+            "header header"
+            "content content"
+            "image image"
+            "footer footer";
+    }
 }
 
 @media (max-width: 400px) {
-  #container {
-    padding: 20px;
-  }
+    #container {
+        padding: 20px;
+    }
 }
 
 .header {
-  grid-area: header;
+    grid-area: header;
 }
 
 .content {
@@ -77,67 +77,67 @@ body.aaaaah #container {
 }
 
 .image {
-  grid-area: image;
+    grid-area: image;
 }
 
 .footer {
-  grid-area: footer;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+    grid-area: footer;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 input,
 label {
-  display: block;
+    display: block;
 }
 
 a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover,
 a:active {
-  color: royalblue;
+    color: royalblue;
 }
 
 body.aaaaah a:hover,
 body.aaaaah a:active {
-  color: goldenrod;
+    color: goldenrod;
 }
 
 h1 {
-  color: white;
-  font-style: italic;
-  text-shadow: 30px 30px 10px black;
-  font-family: "Acme", sans-serif;
-  letter-spacing: 10px;
+    color: white;
+    font-style: italic;
+    text-shadow: 30px 30px 10px black;
+    font-family: "Acme", sans-serif;
+    letter-spacing: 10px;
 }
 
 button,
 img,
 .name,
 .icon {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 button {
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  border: 1px solid black;
-  font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
 }
 
 .list-info {
-  font-weight: bold;
-  text-decoration: underline;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 h2 {
-  font-family: Tahoma, sans-serif;
-  font-size: 1.2em;
+    font-family: Tahoma, sans-serif;
+    font-size: 1.2em;
 }
 
 figure img {
@@ -149,67 +149,67 @@ figure img {
 }
 
 img:hover {
-  filter: brightness(110%);
+    filter: brightness(110%);
 }
 
 body.aaaaah img:hover {
-  filter: brightness(110%) hue-rotate(90deg);
+    filter: brightness(110%) hue-rotate(90deg);
 }
 
 ul {
-  display: flex;
-  flex-flow: column wrap;
-  height: 120px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 120px;
 }
 
 @media (max-width: 600px) {
-  ul {
-    height: inherit;
-  }
+    ul {
+        height: inherit;
+    }
 }
 
 ul > li {
-  min-width: 200px;
+    min-width: 200px;
 }
 
 li:nth-of-type(1) {
-  color: tomato;
+    color: tomato;
 }
 
 li:nth-of-type(2) {
-  color: sienna;
+    color: sienna;
 }
 
 li:nth-of-type(3) {
-  color: dodgerblue;
+    color: dodgerblue;
 }
 
 li:nth-of-type(4) {
-  color: mediumseagreen;
+    color: mediumseagreen;
 }
 
 li:nth-of-type(5) {
-  color: slateblue;
+    color: slateblue;
 }
 
 li:nth-of-type(6) {
-  color: violet;
+    color: violet;
 }
 
 li:nth-of-type(7) {
-  color: crimson;
+    color: crimson;
 }
 
 li:nth-of-type(8) {
-  color: mediumturquoise;
+    color: mediumturquoise;
 }
 
 li:nth-of-type(9) {
-  color: darkorange;
+    color: darkorange;
 }
 
 li:nth-of-type(10) {
-  color: olivedrab;
+    color: olivedrab;
 }
 
 li:nth-of-type(11) {
@@ -217,13 +217,13 @@ li:nth-of-type(11) {
 }
 
 body.aaaaah li {
-  color: lightgray;
+    color: lightgray;
 }
 
 li:hover {
-  transform: translateX(-5px);
+    transform: translateX(-5px);
 }
 
 .altimage {
-  transform: rotate(15deg);
+    transform: rotate(15deg);
 }
