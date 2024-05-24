@@ -25,7 +25,7 @@ body.aaaaah {
     max-width: 880px;
     padding: 40px;
     margin: 0 auto;
-    background: rgba(240, 230, 140, 0.9);
+    background: rgba(223, 140, 240, 0.9);
     min-height: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -157,7 +157,7 @@ body.aaaaah img:hover {
 ul {
     display: flex;
     flex-flow: column wrap;
-    height: 120px;
+    height: 140px;
 }
 
 @media (max-width: 600px) {
@@ -208,6 +208,10 @@ li:nth-of-type(9) {
 
 li:nth-of-type(10) {
     color: olivedrab;
+}
+
+li:nth-of-type(11) {
+    color: tan;
 }
 
 body.aaaaah li {
