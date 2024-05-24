@@ -106,6 +106,9 @@ $(".icon").click(function () {
         $("li:nth-of-type(10)").text("Color Out of Space");
         $(".icon").text("🤡");
         $(".icon").off("click");
+        $(".name").text("Nick Cage");
+        let mySound = new Audio("./images/cat-laugh-meme-1.mp3");
+        mySound.play();
     }
 });
 
