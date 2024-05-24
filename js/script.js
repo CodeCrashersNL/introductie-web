@@ -90,9 +90,9 @@ $("img").click(function () {
 $(".icon").click(function () {
     if (confirm("Weet je het zeker?\nJe krijgt hier mogelijk spijt van.")) {
         $("body").addClass("aaaaah");
-        $("img").attr("src", "./images/nicolas-cage.jpg");
+        $("img").attr("src", "./images/dscimmy.png");
         $("a").attr("href", "./images/wallpaper.jpg");
-        $("#datum").text("tijd voor Nicolas Cage");
+        $("#datum").text("tijd om te fishen");
         $(".list-info").text("Beste films ooit:");
         $("li:nth-of-type(1)").text("Face/Off");
         $("li:nth-of-type(2)").text("Vampire's Kiss");
@@ -110,6 +110,6 @@ $(".icon").click(function () {
 });
 
 $(".name").click(function () {
-    const name = prompt("Wat is je naam", "Nick Cage");
+    const name = prompt("Wat is je naam?", "Gnome");
     $(this).text(name);
 });
