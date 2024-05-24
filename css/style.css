@@ -69,10 +69,11 @@ body.aaaaah #container {
 }
 
 .content {
-  grid-area: content;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
 }
 
 .image {
