@@ -22,16 +22,16 @@ body.aaaaah {
 }
 
 #container {
-    max-width: 880px;
+    max-width: 1200px;
     padding: 40px;
     margin: 0 auto;
     background: burlywood;
     min-height: 600px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas:
         "header header"
-        "image content"
+        "aside content"
         "footer footer";
     grid-gap: 20px;
     border-radius: 10px;
@@ -48,12 +48,12 @@ body.aaaaah #container {
     border-top-right-radius: 100px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     #container {
         grid-template-areas:
             "header header"
             "content content"
-            "image image"
+            "aside aside"
             "footer footer";
     }
 }
@@ -76,8 +76,10 @@ body.aaaaah #container {
     color: #fff;
 }
 
-.image {
-    grid-area: image;
+.aside {
+    grid-area: aside;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .footer {
@@ -159,7 +161,7 @@ body.aaaaah img:hover {
 ul {
     display: flex;
     flex-flow: column wrap;
-    height: 140px;
+    height: 242px;
 }
 
 @media (max-width: 600px) {
