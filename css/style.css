@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
 body {
-    background-color: white;
+    background-color: seashell;
     background-image: url("../images/kermie.jpg");
     font-family: Calibri, sans-serif;
     font-size: 18px;
@@ -159,7 +159,7 @@ body.aaaaah img:hover {
 ul {
     display: flex;
     flex-flow: column wrap;
-    height: 120px;
+    height: 140px;
 }
 
 @media (max-width: 600px) {
