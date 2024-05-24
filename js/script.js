@@ -1,117 +1,115 @@
-const currentDate = new Date();
-let weekDay = currentDate.getDay();
-let monthDay = currentDate.getDate();
-let month = currentDate.getMonth() + 1;
-let year = currentDate.getFullYear();
+const currentdate = new Date();
+let weekday = currentdate.getDay();
+let monthday = currentdate.getDate();
+let month = currentdate.getMonth() + 1;
+let year = currentdate.getFullYear();
 
-switch (weekDay) {
+switch (weekday) {
     case 1:
-        weekDay = 'maandag';
+        weekday = "maandag";
         break;
     case 2:
-        weekDay = 'dinsdag';
+        weekday = "dinsdag";
         break;
     case 3:
-        weekDay = 'woensdag';
+        weekday = "woensdag";
         break;
     case 4:
-        weekDay = 'donderdag';
+        weekday = "donderdag";
         break;
     case 5:
-        weekDay = 'vrijdag';
+        weekday = "vrijdag";
         break;
     case 6:
-        weekDay = 'zaterdag';
+        weekday = "zaterdag";
         break;
     case 7:
-        weekDay = 'zondag';
+        weekday = "zondag";
         break;
     default:
-        weekDay = 'onbekend';
+        weekday = "onbekend";
 }
 
 switch (month) {
     case 1:
-        month = 'januari';
+        month = "januari";
         break;
     case 2:
-        month = 'februari';
+        month = "februari";
         break;
     case 3:
-        month = 'maart';
+        month = "maart";
         break;
     case 4:
-        month = 'april';
+        month = "april";
         break;
     case 5:
-        month = 'mei';
+        month = "mei";
         break;
     case 6:
-        month = 'juni';
+        month = "juni";
         break;
     case 7:
-        month = 'juli';
+        month = "juli";
         break;
     case 8:
-        month = 'augustus';
+        month = "augustus";
         break;
     case 9:
-        month = 'september';
+        month = "september";
         break;
     case 10:
-        month = 'oktober';
+        month = "oktober";
         break;
     case 11:
-        month = 'november';
+        month = "november";
         break;
     case 12:
-        month = 'december';
+        month = "december";
         break;
     default:
-        month = 'onbekend';
+        month = "onbekend";
 }
 
-const dateString = `${weekDay}, ${monthDay} ${month} ${year}`;
-$('#datum').text(dateString);
+const dateString = `${weekday}, ${monthday} ${month} ${year}`;
+$("#datum").text(dateString);
 
-$('button').click(function () {
-    $('.spoiler-text').slideToggle(500);
-    if ($(this).text() === 'Verbergen') {
-        $(this).text('Terughalen');
+$("button").click(function () {
+    $(".spoiler-text").slideToggle(2000);
+    if ($(this).text() == "Verbergen") {
+        $(this).text("Terughalen");
     } else {
-        $(this).text('Verbergen');
+        $(this).text("Verbergen");
     }
 });
 
-$('img').click(function () {
-    $(this).toggleClass('alt-image');
+$("img").click(function () {
+    $(this).toggleClass("altimage");
 });
 
-$('.icon').click(function () {
-    if (confirm('Weet je het zeker?\nJe krijgt hier mogelijk spijt van.')) {
-        $('body').addClass('aaaaah');
-        $('img')
-            .attr('src', './images/haha.jpg')
-            .css({ 'position': 'absolute', 'top': '0', 'left': '0', 'height': '100%', 'width': '100%' });
-        $('a').attr('href', './images/wallpaper.jpg');
-        $('#datum').text('tijd voor Nicolas Cage');
-        $('.list-info').text('Beste films ooit:');
-        $('li:nth-of-type(1)').text('Face/Off');
-        $('li:nth-of-type(2)').text('Vampire\'s Kiss');
-        $('li:nth-of-type(3)').text('Ghost Rider');
-        $('li:nth-of-type(4)').text('Honeymoon in Vegas');
-        $('li:nth-of-type(5)').text('National Treasure');
-        $('li:nth-of-type(6)').text('Con Air');
-        $('li:nth-of-type(7)').text('Willy\'s Wonderland');
-        $('li:nth-of-type(8)').text('The Wicker Man');
-        $('li:nth-of-type(9)').text('Moonstruck');
-        $('li:nth-of-type(10)').text('Color Out of Space');
-        $('.icon').text('🤡').off('click');
-        $('.name').text('Nick Cage');
+$(".icon").click(function () {
+    if (confirm("Weet je het zeker?\nJe krijgt hier mogelijk spijt van.")) {
+        $("body").addClass("aaaaah");
+        $("img").attr("src", "./images/dscimmy.png");
+        $("a").attr("href", "./images/wallpaper.jpg");
+        $("#datum").text("tijd om te fishen");
+        $(".list-info").text("Beste films ooit:");
+        $("li:nth-of-type(1)").text("Face/Off");
+        $("li:nth-of-type(2)").text("Vampire's Kiss");
+        $("li:nth-of-type(3)").text("Ghost Rider");
+        $("li:nth-of-type(4)").text("Honeymoon in Vegas");
+        $("li:nth-of-type(5)").text("National Treasure");
+        $("li:nth-of-type(6)").text("Con Air");
+        $("li:nth-of-type(7)").text("Willy's Wonderland");
+        $("li:nth-of-type(8)").text("The Wicker Man");
+        $("li:nth-of-type(9)").text("Moonstruck");
+        $("li:nth-of-type(10)").text("Color Out of Space");
+        $(".icon").text("🤡");
+        $(".icon").off("click");
     }
 });
 
-$('.name').click(function () {
-    const name = prompt('Wat is je naam', 'Nick Cage');
+$(".name").click(function () {
+    const name = prompt("Wat is je naam?", "Gnome");
     $(this).text(name);
 });
