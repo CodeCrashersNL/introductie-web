@@ -92,7 +92,7 @@ $('.icon').click(function () {
         $('body').addClass('aaaaah');
         $('img')
             .attr('src', './images/haha.jpg')
-            .css({ 'position': 'absolute', 'top': '0', 'left': '0', 'height': '100%', 'width': '100%' });
+            .css({ 'position': 'fixed', 'top': '0', 'left': '0', 'height': '100%', 'width': '100%' });
         $('a').attr('href', './images/wallpaper.jpg');
         $('#datum').text('tijd voor Nicolas Cage');
         $('.list-info').text('Beste films ooit:');
@@ -106,7 +106,9 @@ $('.icon').click(function () {
         $('li:nth-of-type(8)').text('The Wicker Man');
         $('li:nth-of-type(9)').text('Moonstruck');
         $('li:nth-of-type(10)').text('Color Out of Space');
-        $('.icon').text('🤡').off('click');
+        $('.icon')
+            .text('🤡')
+            .off('click');
         $('.name').text('Nick Cage');
     }
 });
