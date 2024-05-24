@@ -157,7 +157,7 @@ body.aaaaah img:hover {
 ul {
     display: flex;
     flex-flow: column wrap;
-    height: 120px;
+    height: 140px;
 }
 
 @media (max-width: 600px) {
