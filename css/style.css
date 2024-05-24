@@ -210,6 +210,10 @@ li:nth-of-type(10) {
   color: olivedrab;
 }
 
+li:nth-of-type(11) {
+    color: tan;
+}
+
 body.aaaaah li {
   color: lightgray;
 }
