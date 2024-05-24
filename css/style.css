@@ -8,7 +8,7 @@ body {
 }
 
 body.aaaaah {
-    background-image: url("../images/nicolas-bg.jpg");
+    background-image: url("../images/gnome.jpg");
     animation: nic 20s linear infinite;
 }
 
