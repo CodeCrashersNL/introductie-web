@@ -157,7 +157,7 @@ body.aaaaah img:hover {
 ul {
     display: flex;
     flex-flow: column wrap;
-    height: 120px;
+    height: 140px;
 }
 
 @media (max-width: 600px) {
@@ -208,6 +208,10 @@ li:nth-of-type(9) {
 
 li:nth-of-type(10) {
     color: olivedrab;
+}
+
+li:nth-of-type(11) {
+    color: tan;
 }
 
 body.aaaaah li {
