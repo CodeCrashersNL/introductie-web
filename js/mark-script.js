@@ -110,6 +110,9 @@ $('.icon').click(function () {
             .text('🤡')
             .off('click');
         $('.name').text('Nick Cage');
+        
+        let mySound = new Audio('./images/cat-laugh-meme-1.mp3');
+        mySound.play();
     }
 });
 
